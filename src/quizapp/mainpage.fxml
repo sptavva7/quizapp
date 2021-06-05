@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.mainpageController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="question" layoutX="75.0" layoutY="77.0" prefHeight="46.0" prefWidth="369.0" text="This is Sample Question Name" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="op1" layoutX="74.0" layoutY="129.0" onAction="#option1" text="Option 1" textFill="#a19a9a">
+         <toggleGroup>
+            <ToggleGroup fx:id="options" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="op2" layoutX="74.0" layoutY="165.0" onAction="#option2" text="Option 2" textFill="#a19a9a" toggleGroup="$options" />
+      <JFXRadioButton fx:id="op4" layoutX="74.0" layoutY="240.0" onAction="#option4" text="Option 4" textFill="#a19a9a" toggleGroup="$options" />
+      <JFXRadioButton fx:id="op3" layoutX="74.0" layoutY="200.0" onAction="#option3" text="Option 3" textFill="#a19a9a" toggleGroup="$options" />
+      <JFXButton fx:id="next" buttonType="RAISED" layoutX="409.0" layoutY="315.0" onAction="#gotonextquestion" prefHeight="46.0" prefWidth="111.0" style="-fx-background-color: #00E676; -fx-background-radius: 30;" text="NEXT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="qno" layoutX="51.0" layoutY="92.0" text="1." textFill="WHITE" />
+      <Label layoutX="441.0" layoutY="23.0" text="Questions Left :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="count" layoutX="554.0" layoutY="23.0" prefHeight="17.0" prefWidth="25.0" text="0" textFill="WHITE" />
+    </children>
+</AnchorPane>

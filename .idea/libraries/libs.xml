@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/controlsfx-8.40.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/sqlite-jdbc-3.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jfoenix.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

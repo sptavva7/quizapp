@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="600.0" style="-fx-background-color: #424242;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.ResultController">
+    <stylesheets>
+        <URL value="@result.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #76FF03;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="278.0" layoutY="19.0" text="Result">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="54.0" layoutY="118.0" text="Total Number of Questions" textFill="WHITE" />
+      <Label fx:id="total" layoutX="307.0" layoutY="118.0" text="0" textFill="WHITE" />
+      <Label layoutX="54.0" layoutY="187.0" text="Total Correct response" textFill="WHITE" />
+      <Label fx:id="correct" layoutX="307.0" layoutY="187.0" text="0" textFill="WHITE" />
+      <Label layoutX="54.0" layoutY="277.0" text="Accuracy" textFill="WHITE" />
+      <Label fx:id="accuracy" layoutX="307.0" layoutY="277.0" text="0" textFill="WHITE" />
+      <JFXButton fx:id="okbut" layoutX="452.0" layoutY="362.0" onAction="#gotologin" prefHeight="45.0" prefWidth="120.0" style="-fx-background-radius: 50; -fx-background-color: #18FFFF;" text="OK" />
+   </children>
+</AnchorPane>

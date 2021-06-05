@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: quizapp
+X-COMMENT: Main-Class will be added automatically by build
+Implementation-Version: 1.0
+Permissions: sandbox
+Codebase: *
+JavaFX-Version: 8.0
+Class-Path: lib/controlsfx-8.40.14-javadoc.jar lib/controlsfx-8.40.14.
+ jar lib/fontawesomefx-8.9.jar lib/fontawesomefx-glyphsbrowser-all-1.3
+ .0.jar lib/jfoenix.jar lib/sqlite-jdbc-3.20.0.jar
+Created-By: JavaFX Packager
+Implementation-Vendor: Bose
+Main-Class: quizapp.Quizapp
+

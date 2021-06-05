@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="567.0" style="-fx-background-color: #0288D1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.login.admin.questions.QuestionsController">
+   <children>
+      <JFXTextField fx:id="question" focusColor="BLACK" labelFloat="true" layoutX="94.0" layoutY="115.0" prefHeight="25.0" prefWidth="359.0" promptText="Insert Question" style="-fx-prompt-text-fill: white;" unFocusColor="#ff0400">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="op1" focusColor="BLACK" labelFloat="true" layoutX="94.0" layoutY="172.0" promptText="Insert Option 1" style="-fx-prompt-text-fill: white;" unFocusColor="#4bee00" />
+      <JFXTextField fx:id="op4" focusColor="BLACK" labelFloat="true" layoutX="94.0" layoutY="319.0" promptText="Insert Option 4" style="-fx-prompt-text-fill: white;" unFocusColor="#00ffa1" />
+      <JFXTextField fx:id="op3" focusColor="BLACK" labelFloat="true" layoutX="94.0" layoutY="273.0" promptText="Insert Option 3" style="-fx-prompt-text-fill: white;" unFocusColor="#ffb200" />
+      <JFXTextField fx:id="op2" focusColor="BLACK" labelFloat="true" layoutX="94.0" layoutY="222.0" promptText="Insert Option 2" style="-fx-prompt-text-fill: white;" unFocusColor="#fff600" />
+      <JFXButton fx:id="insertdata" buttonType="RAISED" layoutX="384.0" layoutY="267.0" onAction="#insertData" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #F50057; -fx-background-radius: 50;" text="INSERT">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+         </graphic></JFXButton>
+      <JFXTextField fx:id="answer" focusColor="BLACK" labelFloat="true" layoutX="375.0" layoutY="197.0" promptText="Insert Answer" style="-fx-prompt-text-fill: white;" unFocusColor="#ff00ee" />
+      <AnchorPane prefHeight="57.0" prefWidth="567.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="205.0" layoutY="16.0" text="Enter Questions Here">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#d600ee" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="384.0" layoutY="326.0" onAction="#goBack" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #76FF03; -fx-background-radius: 50;" text="BACK">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

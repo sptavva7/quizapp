@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="1104.0" style="-fx-background-color: #424242;" stylesheets="@submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.login.admin.AdminUIController">
+   <children>
+      <Label alignment="CENTER" layoutX="364.0" layoutY="14.0" prefHeight="30.0" prefWidth="378.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Questions Configuration">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2ff00" />
+                  <Stop color="#ff4800" offset="0.4054982817869416" />
+                  <Stop color="#c900ff" offset="0.8041237113402062" />
+                  <Stop color="#61cfed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Separator layoutX="52.0" layoutY="55.0" prefHeight="4.0" prefWidth="1000.0" />
+      <TableView fx:id="table" layoutX="11.0" layoutY="71.0" prefHeight="440.0" prefWidth="1083.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="69.0" text="Q ID" />
+          <TableColumn fx:id="questionCol" minWidth="200.0" prefWidth="441.99998474121094" text="Question" />
+            <TableColumn fx:id="op1Col" minWidth="0.0" prefWidth="118.0" text="Option A" />
+            <TableColumn fx:id="op2Col" prefWidth="116.0" text="Option B" />
+            <TableColumn fx:id="op3Col" minWidth="0.0" prefWidth="115.0" text="Option C" />
+            <TableColumn fx:id="op4Col" minWidth="0.0" prefWidth="111.0" text="Option D" />
+            <TableColumn fx:id="ansCol" minWidth="0.0" prefWidth="111.0" text="Answer" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="511.0" prefHeight="87.0" prefWidth="1104.0">
+         <children>
+            <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="783.0" layoutY="24.0" onAction="#refreshTable" prefHeight="39.0" prefWidth="148.0" ripplerFill="#51ff00" style="-fx-background-color: #00C853;" text="REFRESH">
+               <graphic>
+                  <FontAwesomeIconView glyphName="REFRESH" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_movie" buttonType="RAISED" layoutX="187.0" layoutY="24.0" onAction="#AddQ" prefHeight="39.0" prefWidth="148.0" ripplerFill="AQUA" style="-fx-background-color: #2979FF;" text="Add Question">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_remove" buttonType="RAISED" layoutX="478.0" layoutY="24.0" onAction="#removeQ" prefHeight="39.0" prefWidth="148.0" ripplerFill="#ffaf26" style="-fx-background-color: f44336;" text="Remove Question">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="20" />
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+      <JFXButton fx:id="cl" buttonType="RAISED" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="1052.0" layoutY="14.0" onAction="#close" prefHeight="30.0" prefWidth="30.0" ripplerFill="RED" style="-fx-background-color: #f44336;">
+         <graphic>
+            <FontAwesomeIconView glyphName="CLOSE" size="20" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
